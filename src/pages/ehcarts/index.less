@@ -1,0 +1,28 @@
+.rowContent{
+    &:first-child{
+        :global{
+            .ant-col{
+                padding: 0 8px 8px;
+            }
+        }
+    }
+    :global{
+        .ant-row{
+            height: 100%;
+        }
+        .ant-col{
+            height: 50%;
+        }
+        .ant-col{
+            &:first-child,&:nth-child(3){
+                padding-left: 0;
+            }
+            &:last-child,&:nth-child(2){
+                padding-right: 0;
+            }
+            &:nth-child(3),&:last-child{
+                padding-top: 8px;
+            }
+        }
+    }
+}

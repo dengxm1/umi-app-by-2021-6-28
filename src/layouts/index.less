@@ -1,0 +1,52 @@
+
+.normal {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: -1px;
+    background: darkslateblue;
+    padding: .6em 0;
+    color: white;
+    margin: 0;
+  }
+  .mainLayout{
+    height: 100%;
+    .mainWrapLayout{
+      background: #f4f9fe;
+      padding: 24px;
+    }
+    :global{
+      .ant-layout{
+        background: #f4f9fe;
+     } 
+  //    .ant-layout-content{
+  //       background: #ffffff;
+  //  }
+   .ant-layout-sider-trigger{
+     position: absolute;
+     width: 0 !important;
+     height: 120px;
+     top: calc(50% - 60px);
+     right: 0;
+     background: none;
+   }
+    }
+  }
+  
+  .triggerContent{
+    width: 14px;
+    height: 100%;
+  }
+  .closeTigger{
+    background: url('../assets/slider_close_btn.png') no-repeat top left;
+    background-size: 100% 100%;
+  }
+  .openTigger{
+    background: url('../assets/slider_open_ptn.png') no-repeat top left;
+    background-size: 100% 100%;
+  }
+  
